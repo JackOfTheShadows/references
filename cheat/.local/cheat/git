@@ -57,3 +57,7 @@ git pull
 git checkout dev-branch
 git rebase master
 git push origin :dev-branch && git push -u
+
+# Squash commits
+git rebase -i HEAD~number_of_commits
+# add squash to the commits you are squashing
