@@ -6,3 +6,10 @@ grep -rnw '/path/to/somewhere/' -e 'pattern'
     -l (lower-case L) can be added to just give the file name of matching files.
 #Along with these, --exclude, --include, --exclude-dir flags could be used for efficient searching, example:
 	-grep --include=\*.{c,h} -rnw '/path/to/somewhere/' -e "pattern"
+
+-A NUM, --after-context=NUM
+       Print NUM lines of trailing context after matching lines.  Places a line containing -- between contiguous groups of matches.
+-B NUM, --before-context=NUM
+       Print NUM lines of leading context before matching lines.  Places a line containing -- between contiguous groups of matches.
+-C NUM, --context=NUM
+       Print NUM lines of output context.  Places a line containing -- between contiguous groups of matches.

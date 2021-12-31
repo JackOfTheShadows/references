@@ -1,0 +1,5 @@
+# Inserting an environment varibles in awk:
+| awk -v variable=$ENVVARIALBE '{ pringf("This will print the varialbe: %s\n",variable) }';
+
+# Another way to add an environment variable is using the ENVIRON (man page)
+| awk 'BEGIN { variable = ENVIRON["ENVVARIABLE"] }'
